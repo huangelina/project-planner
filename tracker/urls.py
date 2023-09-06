@@ -20,11 +20,11 @@ from django.urls import include, path
 
 
 def redirect_to_list_projects(request):
-    return redirect("home")
+    return redirect("list_project")
 
 
 urlpatterns = [
-    path("/", redirect_to_list_projects, name="home"),
     path("admin/", admin.site.urls),
+    path("", redirect_to_list_projects, name="home"),
     path("projects/", include("projects.urls")),
 ]
