@@ -19,7 +19,7 @@ from django.shortcuts import redirect
 from django.urls import include, path
 
 
-def redirect_to_list_projects(name):
+def redirect_to_list_projects(request):
     return redirect("home")
 
 
