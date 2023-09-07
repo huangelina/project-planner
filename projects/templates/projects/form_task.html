@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tracker</title>
-</head>
-
-<body>
-    <main>
-        <div>
-            <h1>Create a new task</h1>
-            <form method="post">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button>Create</button>
-        </div>
-    </main>
-</body>
-
-</html>
+{% block content %}
+<main>
+    <div>
+        <h1>Create a new task</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button>Create</button>
+    </div>
+</main>
+{% endblock content %}

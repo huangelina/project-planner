@@ -1,5 +1,4 @@
 from django.shortcuts import get_object_or_404, redirect, render
-
 from projects.forms import ProjectForm
 from .models import Project
 from django.contrib.auth.decorators import login_required
