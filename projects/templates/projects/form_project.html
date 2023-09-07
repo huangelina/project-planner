@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Tracker</title>
+    <title>Document</title>
 </head>
 
 <body>
     <main>
         <div>
-            <h1>Signup</h1>
+            <h1>Create a new project</h1>
             <form method="post">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <button>Signup</button>
+                <button>Create</button>
             </form>
         </div>
     </main>
